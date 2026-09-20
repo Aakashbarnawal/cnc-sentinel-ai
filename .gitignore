@@ -1,0 +1,92 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+# Node / Frontend dependencies
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+junit/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environments & Conda
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+conda-meta/
+*.conda
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# Project Datasets (Raw & Processed)
+data/raw/*.csv
+data/raw/*.json
+data/raw/*.parquet
+data/processed/*.csv
+data/processed/*.json
+data/processed/*.parquet
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models & Serialized Binaries
+models/*.joblib
+models/*.pkl
+models/*.json
+models/*.h5
+models/*.onnx
+!models/.gitkeep
+!models/predictive_maintenance_model.joblib
+!models/model_metadata.json
+!models/predictive_maintenance_candidate.joblib
+!models/predictive_maintenance_candidate_metadata.json
+
+# Database & SQLite files
+*.db
+*.sqlite
+*.sqlite3
+database/*.db
+database/*.sqlite
+
+# Artifacts & Output Logs
+artifacts/*.log
+artifacts/*.png
+artifacts/*.jpg
+artifacts/*.json
+artifacts/scratch/
+!artifacts/.gitkeep
+
+# Secrets, Passwords & Credentials
+.env.local
+.env.*.local
+secrets.json
+*.pem
+*.key
+credentials.json
