@@ -1,0 +1,7 @@
+feature,mean_abs_shap_value,rank
+torque_nm,0.07881410693821193,1
+rotational_speed_rpm,0.05917628320304984,2
+air_temperature_c,0.05077522378477154,3
+tool_wear_min,0.045445450163566097,4
+process_temperature_c,0.0300315665354034,5
+type,0.005569549864265448,6

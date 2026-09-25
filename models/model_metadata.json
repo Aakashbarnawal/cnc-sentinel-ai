@@ -1,0 +1,33 @@
+{
+  "model_name": "XGBoost",
+  "selected_threshold": 0.33,
+  "features": [
+    "type",
+    "air_temperature_c",
+    "process_temperature_c",
+    "rotational_speed_rpm",
+    "torque_nm",
+    "tool_wear_min"
+  ],
+  "target": "machine_failure",
+  "excluded_leakage_columns": [
+    "machine_failure",
+    "udi",
+    "product_id",
+    "twf",
+    "hdf",
+    "pwf",
+    "osf",
+    "rnf",
+    "air_temperature_k",
+    "process_temperature_k",
+    "health_index",
+    "scenario"
+  ],
+  "random_seed": 42,
+  "training_dataset": "data/processed/ai4i2020_cleaned.csv",
+  "train_rows": 7000,
+  "validation_rows": 1500,
+  "test_rows": 1500,
+  "scale_pos_weight": 28.535864978902953
+}

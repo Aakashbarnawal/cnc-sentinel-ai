@@ -1,0 +1,27 @@
+{
+  "model_name": "Optimized_XGBoost_Candidate",
+  "selected_threshold": 0.7,
+  "best_hyperparameters": {
+    "classifier__subsample": 1.0,
+    "classifier__scale_pos_weight": 22.828691983122365,
+    "classifier__n_estimators": 250,
+    "classifier__min_child_weight": 1,
+    "classifier__max_depth": 6,
+    "classifier__learning_rate": 0.1,
+    "classifier__gamma": 0.0,
+    "classifier__colsample_bytree": 0.9
+  },
+  "cv_pr_auc_score": 0.7752011816508702,
+  "features": [
+    "type",
+    "air_temperature_c",
+    "process_temperature_c",
+    "rotational_speed_rpm",
+    "torque_nm",
+    "tool_wear_min"
+  ],
+  "target": "machine_failure",
+  "random_seed": 42,
+  "is_production_model": false,
+  "eval_integrity_note": "Evaluated using validation-only hyperparameter tuning. Test set evaluation is a subsequent check on existing holdout."
+}
